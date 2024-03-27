@@ -32,9 +32,22 @@ button {
 }
 
 .container {
-    width: 1158px;
-    padding: 0 15px;
+    min-width: 320px;
+    padding: 0 16px;
     margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px; 
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding: 0 15px;
+    }
 }
 
 h1,h2,h3,h4,h5,h6,p {
@@ -51,25 +64,19 @@ address {
     font-style: normal;
 }
 
-
-/** ===============HEADER=============== */
-
 .header {
     border-bottom: 1px solid #e7e9fc;
-    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
-    background: #fff; 
 }
 
 .container-header {
     display: flex;
     align-items: center; 
+    justify-content: space-between;
 }
 
 .header-navigation {
     display: flex;
     align-items: center;
-    flex-grow: 1;
-    margin-right: 332px;
 }
 
 .header-logo {
@@ -80,11 +87,42 @@ address {
     text-transform: uppercase;
     color: #4D5AE5;
     font-family: Raleway, sans-serif;
-    margin-right: 76px;
+    padding: 17px 0;
 }
 
 .header-logo-part {
     color: #2e2f42;
+}
+
+.header-menu-list {
+    display: none;
+}
+
+.address {
+    font-style: normal;
+    margin-left: auto;
+    display: none;
+}
+
+.open-menu-btn {
+    padding: 0;
+    line-height: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+@media screen and (min-width:768px) {
+    .header-menu-list {
+     display: flex;
+     gap: 40px;
+}
+
+.open-menu-btn {
+    display: none;
+}
+.header-logo {
+    margin-right: 120px;
 }
 
 .header-menu-list {
@@ -123,36 +161,44 @@ color: #404BBF;
     height: 4px;
     width: 100%;
 }
-
 .address {
-    font-style: normal;
+    display: block;
 }
 
 .address-list {
-    display: flex;
-    margin-left: auto;
-    gap: 40px;
+display: flex;
+flex-direction: column;
+gap: 12px;
 }
 
-.address-item {}
-
 .address-link {
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.02em;
     color: #434455;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .address-link:hover,
 .address-link:focus {
     color:#404BBF; 
 }
+}
 
-/** ================================== */
 
-
-/** ===============HERO=============== */
+@media screen and (min-width: 1158px) {
+    .header-logo {
+        margin-right: 76px;
+    }
+    .address-list {
+        flex-direction: row;
+        gap: 40px;
+    }
+    .address-item {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+/* 
 
 .hero {
     padding: 188px 0;
@@ -213,10 +259,8 @@ color: #404BBF;
     padding: 48px 635px 188px 636px;
 }
 
-/** =================================== */
 
 
- /** ==============FEATURES============ */
  
  .features {
     padding-top: 120px;
@@ -269,10 +313,9 @@ color: #404BBF;
     color: #434455;
  }
 
- /** =================================== */
 
+ 
 
- /** ==============TEAM============ */
 
  .team {
     background-color: #f4f4fd;
@@ -365,10 +408,10 @@ color: #404BBF;
     background-color: #404bbf;
 }
 
-/** =================================== */
 
 
-/** ==============PORTFOLIO============ */
+
+
 
 .portfolio {
     padding: 120px 0 120px 0;
@@ -461,10 +504,11 @@ color: #404BBF;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
   
- /** =================================== */
 
 
- /** ==============FOOTER============ */
+
+
+
 
 .footer {
     padding-top: 100px;
@@ -895,4 +939,5 @@ button {
     font-family: inherit;
     line-height: inherit;
 }
-/** =================================== */
+
+ */
