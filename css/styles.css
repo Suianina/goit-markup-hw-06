@@ -33,6 +33,19 @@ button {
     overflow: hidden;
 }
 
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
 
 .container {
     max-width: 320px;
@@ -52,21 +65,6 @@ button {
     padding: 0 15px;
 }
  }
-
-h1,h2,h3,h4,h5,h6,p {
-    margin: 0;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-address {
-    font-style: normal;
-}
-
 
 
 /** ===============HEADER=============== */
@@ -121,17 +119,17 @@ address {
 }
 
 @media screen and (min-width:768px) {  
-.header-menu-list {
-    display: flex;
-    gap: 40px;
-}
-
 .open-menu-btn {
     display: none;
 }
 
 .header-logo {
     margin-right: 120px;
+}
+
+.header-menu-list {
+    display: flex;
+    gap: 40px;
 }
 
 .header-nav-link {
@@ -196,7 +194,7 @@ gap: 12px;
 }
 .address-list {
     flex-direction: row;
-     gap: 40px;
+    gap: 40px;
 }
 .address-item {
     font-size: 16px;
@@ -230,7 +228,9 @@ gap: 12px;
 }
 }
  
-.container {}
+.container {
+    width: 768px;
+}
 
 .hero-title {
     font-weight: 700;
@@ -486,6 +486,9 @@ gap: 12px;
     align-items: center;
     flex-direction: column;
 }
+
+
+
 
 .team-image {
     margin: 0 auto;
