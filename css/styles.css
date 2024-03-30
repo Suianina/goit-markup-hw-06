@@ -66,7 +66,6 @@ address {
 }
  }
 
-
 /** ===============HEADER=============== */
 
 
@@ -211,7 +210,7 @@ gap: 12px;
 .hero {
     padding: 188px 0;
     background: #2e2f42;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-mob-1x.jpg);
     /* max-width: 1440px; */
     background-repeat: no-repeat;
     background-position: center;
@@ -224,13 +223,11 @@ gap: 12px;
 
 @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero { 
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);  
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-2px.jpg);  
 }
 }
  
-.container {
-    width: 768px;
-}
+.container {}
 
 .hero-title {
     font-weight: 700;
@@ -285,8 +282,6 @@ gap: 12px;
    
 }
 
-
-
 @media screen and (min-width: 768px) {
 .hero-title { 
     font-size: 56px;
@@ -316,7 +311,6 @@ gap: 12px;
     padding: 48px 636px 188px 635px;
 }
 }
-
 
 /** =================================== */
 
@@ -487,9 +481,6 @@ gap: 12px;
     flex-direction: column;
 }
 
-
-
-
 .team-image {
     margin: 0 auto;
     margin-bottom: 32px;
@@ -568,7 +559,25 @@ gap: 12px;
 }
 }
 
+@media screen and (min-width: 1158px){
+    .container {
+        width: 1158px;
+    }
 
+.team {
+    padding: 120px 0;
+    }
+
+.team-list {
+    gap: 24px; 
+    align-items: center;
+
+}
+.team-item {
+    width: calc((100% - 3 * 24px) / 4);
+    justify-content: center;   
+}
+}
 
 /** =================================== */
 
@@ -689,8 +698,28 @@ gap: 12px;
     width: calc((100% - 24px) / 2);
     flex-direction: row;
     box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-}}
+}
+}
 
+@media screen and (min-width: 1158px) {
+.portfolio {
+    padding: 120px 156px 120px 156px;
+}
+
+.portfolio-list {
+    gap: 48px 24px; 
+}
+
+.portfolio-item {
+    width: calc((100% - 24px * 2) / 3);
+    position: relative;
+}
+
+.portfolio-data {
+    gap: 48px 24px;
+
+}
+}
 
  /** =================================== */
 
@@ -1127,4 +1156,4 @@ button {
     line-height: inherit;
 }
 
- /** =================================== */
+ /** ===================================*/
