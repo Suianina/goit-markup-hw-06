@@ -222,7 +222,8 @@ gap: 12px;
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero { 
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-2x.jpg);  
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-mob-1x.jpg);  
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-mob-2x.jpg);  
 }
 }
 
@@ -274,26 +275,48 @@ gap: 12px;
     background: #404bbf; 
 }
 
-.hero-buy-btn-button {
-    /* padding: 48px 635px 188px 636px; */
-   padding: 72px 76px 72px 75px;
-}
+/* .hero-buy-btn-button {
+    padding: 48px 635px 188px 636px;
+   padding: 72px 76px 72px 75px; 
+} */
+
+
 
 @media screen and (min-width: 768px) {
+    .hero { 
+        padding: 112px 0;
+    }
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero { 
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-tab-1x.jpg);  
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-tab-2x.jpg);  
+}
+}
+
 .hero-title { 
     font-size: 56px;
     line-height: 1.07;
     max-width: 496px;
 }
 
-.hero-buy-btn-button {
+/* .hero-buy-btn-button {
    padding: 36px 299px 112px 300px;
-}
+
+} */
 }
 
 @media screen and (min-width: 1158px) {
 .hero {
     max-width: 1158px;
+    padding: 188px 0;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero { 
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-1x.jpg);  
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-2x.jpg);  
+}
 }
 
 .hero-title {
@@ -303,9 +326,9 @@ gap: 12px;
     margin-bottom: 48px; 
 }
 
-.hero-buy-btn-button {
+/* .hero-buy-btn-button {
     padding: 48px 636px 188px 635px;
-}
+} */
 }
 /** =================================== */
 
