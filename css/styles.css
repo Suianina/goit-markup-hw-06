@@ -406,19 +406,16 @@ gap: 12px;
     
 .container {
     width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-} 
+}
+
 
 .features-list {
-    gap: 0 24px;  
+    gap: 0 24px;
     flex-direction: row;
-    align-items: center;
 } 
         
 .features-item {
     width: calc((100% - 3 * 24px) / 4);
-    
 }
             
 .features-icon {
@@ -558,13 +555,13 @@ gap: 12px;
 
 @media screen and (min-width: 768px){
 .team {
-    padding: 96px 16px;
+    padding-top: 96px; 
+    padding-bottom: 96px;
 }
     
 .team-list {
     padding-left: 92px;
     padding-right: 92px;
-    
 }
 
     
@@ -587,7 +584,8 @@ gap: 12px;
 .team-list {
     gap: 24px;   
     flex-direction: row; 
-    align-items: center;
+    padding: 0;
+    align-items: center; 
 }
 
 .team-item {
@@ -707,8 +705,6 @@ gap: 12px;
 
 @media screen and (min-width: 768px) {
 .portfolio-list {
-    padding-left: 16px;
-    padding-right: 16px;
     gap: 24px; 
 }
     
@@ -994,24 +990,25 @@ max-width: 264px;
 .footer-container {
     width: 1158px;
     align-items: baseline;
-    flex-wrap: nowrap;
-}
+    flex-wrap: nowrap; 
+} 
 
 .footer-data {
     margin-right: 120px;
-    /* margin-top: 100px;
-    margin-bottom: 100px; */
+    margin-top: 100px;
+    margin-bottom: 100px;
 } 
 
-
-/* .footer-text {
-    max-width: 264px;
-} */
+.footer-text {
+    max-width: 264px; 
+} 
 
 .footer-media-icon {
     width: 208px;
-    margin: 100px 80px 132px 120px;
-    text-align: left;
+    margin-top: 100px;
+    margin-bottom: 132px;
+    margin-right: 80px;
+    /* text-align: left; */
 }   
 
 .footer-text-media {
@@ -1026,8 +1023,8 @@ max-width: 264px;
 
 .footer-form-user {
     display: flex;
-    gap: 24px;
     flex-direction: row;
+    gap: 24px;
 }
 
 .footer-input-email {
