@@ -213,6 +213,9 @@ gap: 12px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
 }
  
 .is-open {
